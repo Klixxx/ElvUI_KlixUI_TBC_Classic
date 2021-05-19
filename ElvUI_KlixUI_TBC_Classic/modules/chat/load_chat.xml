@@ -1,0 +1,10 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/">	
+	<Script file="chat.lua"/>
+
+<Script file="ChatFade.lua"/>
+
+<Script file="EasyChannel.lua"/>
+	<Script file="emotes.lua"/>
+	<Script file="rightclickmenu.lua"/>
+	<Script file="options.lua"/>
+</Ui>
