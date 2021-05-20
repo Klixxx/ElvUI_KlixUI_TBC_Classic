@@ -792,7 +792,7 @@ function KUI:RegisterKuiMedia()
 	E.media.KlixBlank = LSM:Fetch('statusbar', 'KlixBlank')
 	
 	-- Custom Textures
-	E.media.roleIcons = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\UI-LFG-ICON-ROLES]]
+	E.media.roleIcons = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\UI-LFG-ICON-ROLES]]
 end
 
 -- Color and class color stuff
@@ -1185,7 +1185,7 @@ local function CreateWideShadow(f)
 	local borderr, borderg, borderb = 0, 0, 0
 	local backdropr, backdropg, backdropb = 0, 0, 0
 
-	local wideshadow = f.wideshadow or T.CreateFrame('Frame', nil, f) -- This way you can replace current shadows.
+	local wideshadow = f.wideshadow or T.CreateFrame('Frame', nil, f, 'BackdropTemplate') -- This way you can replace current shadows.
 	wideshadow:SetFrameLevel(1)
 	wideshadow:SetFrameStrata('BACKGROUND')
 	wideshadow:SetOutside(f, 6, 6)
@@ -1243,7 +1243,7 @@ local function CreateIconShadow(f, alpha)
 	
 	local ishadow = f:CreateTexture(nil, "OVERLAY")
 	ishadow:SetInside(f, 1, 1)
-	ishadow:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\overlay]])
+	ishadow:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\overlay]])
 	ishadow:SetVertexColor(1, 1, 1, alpha or 1)
 	ishadow:SetSize(f:GetSize())
 
@@ -1265,7 +1265,7 @@ local function Styling(f, useSquares, useGradient, useShadow, shadowOverlayWidth
 		squares:ClearAllPoints()
 		squares:SetPoint("TOPLEFT", 1, -1)
 		squares:SetPoint("BOTTOMRIGHT", -1, 1)
-		squares:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\squares]], true, true)
+		squares:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\squares]], true, true)
 		squares:SetHorizTile(true)
 		squares:SetVertTile(true)
 		squares:SetBlendMode("ADD")
@@ -1278,7 +1278,7 @@ local function Styling(f, useSquares, useGradient, useShadow, shadowOverlayWidth
 		gradient:ClearAllPoints()
 		gradient:SetPoint("TOPLEFT", 1, -1)
 		gradient:SetPoint("BOTTOMRIGHT", -1, 1)
-		gradient:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\gradient.tga]])
+		gradient:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\gradient.tga]])
 		gradient:SetVertexColor(.3, .3, .3, .15)
 
 		f.gradient = gradient
@@ -1289,7 +1289,7 @@ local function Styling(f, useSquares, useGradient, useShadow, shadowOverlayWidth
 		mshadow:SetInside(f, 0, 0)
 		mshadow:SetWidth(shadowOverlayWidth or 33)
 		mshadow:SetHeight(shadowOverlayHeight or 33)
-		mshadow:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\overlay]])
+		mshadow:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\overlay]])
 		mshadow:SetVertexColor(1, 1, 1, shadowOverlayAlpha or 0.6)
 
 		f.mshadow = mshadow

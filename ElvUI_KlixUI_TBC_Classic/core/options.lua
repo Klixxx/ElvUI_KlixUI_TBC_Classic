@@ -53,7 +53,7 @@ local function Core()
 				type = 'description',
 				name = L["KUI_DESC"]..E.NewSign,
 				fontSize = 'medium',
-				image = function() return 'Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\KlixUILogo.tga', 155, 150 end,
+				image = function() return 'Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\KlixUILogo.tga', 155, 150 end,
 			},
 
 			install = {
@@ -303,7 +303,7 @@ local function Core()
 							},
 							curselink= {
 								order = 5, type = 'input', width = 'full', name = 'Curseforge.com',
-								get = function(info) return 'https://www.curseforge.com/wow/addons/ElvUI_KlixUI_Classic-2-0' end,
+								get = function(info) return 'https://www.curseforge.com/wow/addons/ElvUI_KlixUI_TBC_Classic-2-0' end,
 							},
 							gitlablink = {
 								order = 6, type = 'input', width = 'full', name = L["Git Ticket Tracker"],

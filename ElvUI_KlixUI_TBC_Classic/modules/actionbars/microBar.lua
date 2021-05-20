@@ -13,7 +13,7 @@ local microBar = T.CreateFrame("Frame", KUI.Title.."MicroBar", E.UIParent)
 
 local function OnHover(button)
 if not MB.db.highlight.enable then return end
-	local buttonHighlight = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\highlight"
+	local buttonHighlight = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\highlight"
 
 	if button.tex then
 		if MB.db.text.colors.customColor == 1 then
@@ -68,7 +68,7 @@ function MB:CreateMicroBar()
 	microBar:Styling()
 	E.FrameLocks[microBar] = true
 
-	local IconPath = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\icons\\"
+	local IconPath = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\icons\\"
 
 	--Config
 	local configButton = T.CreateFrame("Button", nil, microBar)

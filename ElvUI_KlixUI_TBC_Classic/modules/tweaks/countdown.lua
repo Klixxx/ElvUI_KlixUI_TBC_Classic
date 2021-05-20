@@ -4,7 +4,7 @@ local heroes = {
 	"UT2003",
 }
 local key = "Klix - Unreal Tournament 2003"
-local path = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\sounds\\Unreal_Tournament\\Classic2003\\%s_%d.ogg"
+local path = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\sounds\\Unreal_Tournament\\Classic2003\\%s_%d.ogg"
 
 for i = 1, #heroes do
 	local hero = heroes[i]

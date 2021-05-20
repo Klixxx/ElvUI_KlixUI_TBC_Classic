@@ -61,12 +61,12 @@ KS.BlizzardRegions = {
 
 -- Underlines
 function KS:Underline(frame, shadow, height)
-	local line = T.CreateFrame("Frame", nil, frame)
+	local line = T.CreateFrame("Frame", nil, frame, 'BackdropTemplate')
 	if line then
 		line:SetPoint("BOTTOM", frame, -1, 1)
 		line:SetSize(frame:GetWidth(), height or 1)
 		line.Texture = line:CreateTexture(nil, "OVERLAY")
-		line.Texture:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\Klix]])
+		line.Texture:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\Klix]])
 		line.Texture:SetVertexColor(r, g, b)
 		if shadow then
 			if shadow == "backdrop" then
@@ -82,7 +82,7 @@ end
 
 -- Create shadow for textures
 function KS:CreateSD(parent, size, r, g, b, alpha, offset)
-	local sd = T.CreateFrame("Frame", nil, parent)
+	local sd = T.CreateFrame("Frame", nil, parent, 'BackdropTemplate')
 	sd.size = size or 5
 	sd.offset = offset or 0
 	sd:SetBackdrop({
@@ -157,7 +157,7 @@ function KS:CreateGradient(f)
 	tex:ClearAllPoints()
 	tex:SetPoint("TOPLEFT", 1, -1)
 	tex:SetPoint("BOTTOMRIGHT", -1, 1)
-	tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\gradient.tga]])
+	tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\gradient.tga]])
 	tex:SetVertexColor(.3, .3, .3, .15)
 	tex:SetSnapToPixelGrid(false)
 	tex:SetTexelSnappingBias(0)
@@ -170,7 +170,7 @@ function KS:CreateBackdrop(frame)
 
 	local parent = frame.IsObjectType and frame:IsObjectType("Texture") and frame:GetParent() or frame
 
-	local backdrop = T.CreateFrame("Frame", nil, parent)
+	local backdrop = T.CreateFrame("Frame", nil, parent, 'BackdropTemplate')
 	backdrop:SetOutside(frame)
 	backdrop:SetTemplate("Transparent")
 
@@ -195,7 +195,7 @@ function KS:CreateBDFrame(f, a, left, right, top, bottom)
 
 	local lvl = frame:GetFrameLevel()
 
-	local bg = T.CreateFrame("Frame", nil, frame)
+	local bg = T.CreateFrame("Frame", nil, frame, 'BackdropTemplate')
 	bg:SetPoint("TOPLEFT", f, left or -1, top or 1)
 	bg:SetPoint("BOTTOMRIGHT", f, right or 1, bottom or -1)
 	bg:SetFrameLevel(lvl == 0 and 1 or lvl - 1)
@@ -207,7 +207,8 @@ end
 
 function KS:CreateBD(f, a)
 	T.assert(f, "doesn't exist!")
-
+	
+	local f = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	f:SetBackdrop({
 		bgFile = E["media"].normTex,
 		edgeFile = E["media"].normTex,
@@ -220,7 +221,7 @@ function KS:CreateBD(f, a)
 end
 
 function KS:SetBD(x, y, x2, y2)
-	local bg = T.CreateFrame("Frame", nil, self)
+	local bg = T.CreateFrame("Frame", nil, self, 'BackdropTemplate')
 	if not x then
 		bg:SetPoint("TOPLEFT")
 		bg:SetPoint("BOTTOMRIGHT")
@@ -350,14 +351,14 @@ function KS:Reskin(button, strip, noGlow)
 	if button.Icon then
 		local Texture = button.Icon:GetTexture()
 		if Texture and T.string_find(Texture, [[Interface\ChatFrame\ChatFrameExpandArrow]]) then
-			button.Icon:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\Arrow]])
+			button.Icon:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\Arrow]])
 			button.Icon:SetVertexColor(1, 1, 1)
 			button.Icon:SetRotation(KS.ArrowRotation['RIGHT'])
 		end
 	end
 	
-	if not noGlow then
-		button.glow = T.CreateFrame("Frame", nil, button)
+	--[[if not noGlow then
+		button.glow = T.CreateFrame("Frame", nil, button, 'BackdropTemplate')
 		button.glow:SetBackdrop({
 			edgeFile = LSM:Fetch("statusbar", "Klix"), edgeSize = E:Scale(2),
 			insets = {left = E:Scale(2), right = E:Scale(2), top = E:Scale(2), bottom = E:Scale(2)},
@@ -369,7 +370,7 @@ function KS:Reskin(button, strip, noGlow)
 
 		button:HookScript("OnEnter", StartGlow)
 		button:HookScript("OnLeave", StopGlow)
-	end
+	end]]
 end
 
 function KS:ReskinCheckBox(frame, noBackdrop, noReplaceTextures)
@@ -601,7 +602,7 @@ local function replaceConfigArrows(button)
 	-- add the new icon
 	if not button.img then
 		button.img = button:CreateTexture(nil, 'ARTWORK')
-		button.img:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\arrow')
+		button.img:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\arrow')
 		button.img:SetSize(12, 12)
 		button.img:Point('CENTER')
 		button.img:SetVertexColor(1, 1, 1)
@@ -705,15 +706,15 @@ hooksecurefunc(S, "HandleButton", KS.Reskin)
 hooksecurefunc(S, "HandleCheckBox", KS.ReskinCheckBox)
 hooksecurefunc(S, "HandleScrollBar", KS.ReskinScrollBar)
 -- New Widget Types
-hooksecurefunc(S, "SkinTextWithStateWidget", KS.ReskinSkinTextWithStateWidget)
+--hooksecurefunc(S, "SkinTextWithStateWidget", KS.ReskinSkinTextWithStateWidget)
 
 local function ReskinVehicleExit()
 	if not E.private.KlixUI.skins.vehicleButton then return end
 	local f = _G["LeaveVehicleButton"]
 	if f then
-		f:SetNormalTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\arrow")
-		f:SetPushedTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\arrow")
-		f:SetHighlightTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\arrow")
+		f:SetNormalTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\arrow")
+		f:SetPushedTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\arrow")
+		f:SetHighlightTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\arrow")
 	end
 end
 

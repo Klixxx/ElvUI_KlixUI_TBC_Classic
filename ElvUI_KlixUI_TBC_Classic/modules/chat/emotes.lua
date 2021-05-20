@@ -59,8 +59,8 @@ local emotes = {
 	{":stuck_out_tongue_closed_eyes:", [=[Interface\AddOns\ElvUI\Media\ChatEmojis\StuckOutTongueClosedEyes]=]},
 
 	-- My emots
-	{":monkaomega:", [=[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\chatEmojis\monkaomega]=]},
-	{":salt:", [=[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\chatEmojis\salt]=]},
+	{":monkaomega:", [=[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\chatEmojis\monkaomega]=]},
+	{":salt:", [=[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\chatEmojis\salt]=]},
 }
 
 KC.emotes = emotes

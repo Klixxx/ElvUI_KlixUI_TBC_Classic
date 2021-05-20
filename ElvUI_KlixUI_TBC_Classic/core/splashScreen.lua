@@ -47,7 +47,7 @@ local function CreateSplashScreen()
 
 	f.logo = f:CreateTexture(nil, 'OVERLAY')
 	f.logo:Size(125, 120)
-	f.logo:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\KlixUILogo.tga')
+	f.logo:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\KlixUILogo.tga')
 	f.logo:Point('CENTER', f, 'CENTER', 0, 4)
 
 	--[[f.version = KUI:CreateText(f, "OVERLAY", 16, nil, "CENTER")

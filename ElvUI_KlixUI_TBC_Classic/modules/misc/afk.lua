@@ -260,7 +260,7 @@ local function Initialize()
 	AFK.AFKMode.bottom.faction:SetParent(AFK.AFKMode.bottom.factionb)
 	AFK.AFKMode.bottom.faction:SetInside()
 	-- Apply class texture rather than the faction
-	AFK.AFKMode.bottom.faction:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\classIcons\\CLASS-'..className)
+	AFK.AFKMode.bottom.faction:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\classIcons\\CLASS-'..className)
 
 	-- Add more info in the name and position it to the center
 	AFK.AFKMode.bottom.name:ClearAllPoints()
@@ -295,7 +295,7 @@ local function Initialize()
 
 	-- KlixUI Logo
 	AFK.AFKMode.bottom.KuiLogo = AFK.AFKMode.bottom:CreateTexture(nil, "OVERLAY")
-	AFK.AFKMode.bottom.KuiLogo:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\KlixUILogo.tga")
+	AFK.AFKMode.bottom.KuiLogo:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\KlixUILogo.tga")
 	AFK.AFKMode.bottom.KuiLogo:SetPoint("RIGHT", AFK.AFKMode.bottom, "RIGHT", -50, 8)
 	AFK.AFKMode.bottom.KuiLogo:Size(80, 80)
 

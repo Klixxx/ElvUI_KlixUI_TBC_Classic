@@ -13,12 +13,12 @@ KUI.styling = {}
 KUI.iconShadow = {}
 KUI.softGlow = {}
 KUI.Title = string.format('|cfff960d9%s |r', 'KlixUI')
-KUI.Version = GetAddOnMetadata('ElvUI_KlixUI_Classic', 'Version')
-KUI.Logo = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\KlixUILogo.tga]]
-KUI.MBL = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\KlixMB.blp"
-KUI.MBL1 = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\KlixMB1.blp"
+KUI.Version = GetAddOnMetadata('ElvUI_KlixUI_TBC_Classic', 'Version')
+KUI.Logo = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\KlixUILogo.tga]]
+KUI.MBL = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\KlixMB.blp"
+KUI.MBL1 = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\KlixMB1.blp"
 KUI.ElvUIV = tonumber(E.version)
-KUI.ElvUIX = tonumber(GetAddOnMetadata("ElvUI_KlixUI_Classic", "X-ElvVersion"))
+KUI.ElvUIX = tonumber(GetAddOnMetadata("ElvUI_KlixUI_TBC_Classic", "X-ElvVersion"))
 BINDING_HEADER_KLIXUI = KUI.Title
 KUI.WoWPatch, KUI.WoWBuild, KUI.WoWPatchReleaseDate, KUI.TocVersion = GetBuildInfo()
 KUI.WoWBuild = select(2, GetBuildInfo()) KUI.WoWBuild = tonumber(KUI.WoWBuild)
@@ -75,7 +75,7 @@ function KUI:ErrorOn(msg)
 		Toolkit.DisableAllAddOns()
 		Toolkit.EnableAddOn("ElvUI")
 		Toolkit.EnableAddOn("ElvUI_OptionsUI")
-		Toolkit.EnableAddOn("ElvUI_KlixUI_Classic")
+		Toolkit.EnableAddOn("ElvUI_KlixUI_TBC_Classic")
 		Toolkit.SetCVar("scriptErrors", 1)
 		Toolkit.ReloadUI()
 	elseif (msg == 'off') then

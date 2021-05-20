@@ -53,13 +53,13 @@ function KUF:Configure_ReadyCheckIcon(frame)
 	tex.notReadyTexture = [[Interface\RaidFrame\ReadyCheck-NotReady]]
 	tex.waitingTexture = [[Interface\RaidFrame\ReadyCheck-Waiting]]
 	elseif E.db.KlixUI.unitframes.icons.rdy == "BenikUI" then
-    tex.readyTexture = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\readycheckIcons\bui-ready]]
-	tex.notReadyTexture = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\readycheckIcons\bui-notready]]
-	tex.waitingTexture = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\readycheckIcons\bui-waiting]]
+    tex.readyTexture = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\readycheckIcons\bui-ready]]
+	tex.notReadyTexture = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\readycheckIcons\bui-notready]]
+	tex.waitingTexture = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\readycheckIcons\bui-waiting]]
 	elseif E.db.KlixUI.unitframes.icons.rdy == "Smiley" then
-	tex.readyTexture = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\readycheckIcons\smiley-ready]]
-	tex.notReadyTexture = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\readycheckIcons\smiley-notready]]
-	tex.waitingTexture = [[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\readycheckIcons\smiley-waiting]]
+	tex.readyTexture = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\readycheckIcons\smiley-ready]]
+	tex.notReadyTexture = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\readycheckIcons\smiley-notready]]
+	tex.waitingTexture = [[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\readycheckIcons\smiley-waiting]]
 	end
 end
 
@@ -73,11 +73,11 @@ function KUF:Configure_RaidIcon(frame)
 	if E.db.KlixUI.raidmarkers.raidicons == "Classic" then
 		tex:SetTexture([[Interface\TargetingFrame\UI-RaidTargetingIcons]])
 	elseif E.db.KlixUI.raidmarkers.raidicons == "Anime" then
-		tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\raidmarkers\anime\UI-RaidTargetingIcons]])
+		tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\raidmarkers\anime\UI-RaidTargetingIcons]])
 	elseif E.db.KlixUI.raidmarkers.raidicons == "Aurora" then
-		tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\raidmarkers\aurora\UI-RaidTargetingIcons]])
+		tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\raidmarkers\aurora\UI-RaidTargetingIcons]])
 	elseif E.db.KlixUI.raidmarkers.raidicons == "Myth" then
-		tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_Classic\media\textures\raidmarkers\myth\UI-RaidTargetingIcons]])
+		tex:SetTexture([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\textures\raidmarkers\myth\UI-RaidTargetingIcons]])
 	end
     tex.KlixReplace = true
     tex.SetTexture = E.noop
@@ -98,7 +98,7 @@ function KUF:AddShouldIAttackIcon(frame)
 	tag:SetAlpha(1)
 
 	tag.tx = tag:CreateTexture(nil, "OVERLAY")
-	tag.tx:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\Skull.blp")
+	tag.tx:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\Skull.blp")
 	tag.tx:SetAllPoints()
 	
 	tag:RegisterEvent("PLAYER_TARGET_CHANGED")

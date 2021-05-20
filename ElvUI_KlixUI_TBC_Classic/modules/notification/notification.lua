@@ -275,7 +275,7 @@ function NF:UPDATE_PENDING_MAIL()
 		if hasMail then
 			self:DisplayToast(T.string_format("|cfff9ba22%s|r", MAIL_LABEL), HAVE_MAIL, nil, "Interface\\Icons\\inv_letter_15", .08, .92, .08, .92)
 			if NF.db.noSound ~= true then
-				T.PlaySoundFile([[Interface\AddOns\ElvUI_KlixUI_Classic\media\sounds\mail.mp3]])
+				T.PlaySoundFile([[Interface\AddOns\ElvUI_KlixUI_TBC_Classic\media\sounds\mail.mp3]])
 			end
 			if NF.db.message then 
 				KUI:Print(L["You have a new mail!"])

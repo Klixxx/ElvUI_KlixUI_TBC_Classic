@@ -84,7 +84,7 @@ local function getFontPath(fontName)
     local fontPath = LSM:Fetch("font", fontName)
 
     if (fontPath == nil) then
-        fontPath = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\fonts\\Expressway.ttf"
+        fontPath = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\fonts\\Expressway.ttf"
     end
 
     return fontPath

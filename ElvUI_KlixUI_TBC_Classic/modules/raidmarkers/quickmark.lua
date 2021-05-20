@@ -2,7 +2,7 @@ local KUI, T, E, L, V, P, G = unpack(select(2, ...))
 local QM = KUI:NewModule("QuickMark", "AceHook-3.0")
 
 local menuFrame = T.CreateFrame("Frame", "QuickRaidMarking", E.UIParent, "UIDropDownMenuTemplate")
-local menuIcon = "Interface\\Addons\\ElvUI_KlixUI_Classic\\media\\textures\\raidmarkers\\anime\\UI-RaidTargetingIcons"
+local menuIcon = "Interface\\Addons\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\raidmarkers\\anime\\UI-RaidTargetingIcons"
 local menuList = {
 	{text = RAID_TARGET_NONE, notCheckable = 1, icon = "Interface\\Buttons\\UI-GroupLoot-Pass-Up",
 		func = function() T.SetRaidTarget("target", 0) end},
@@ -28,11 +28,11 @@ local menuList = {
 	if E.db.KlixUI.raidmarkers.raidicons == "Classic" then
 		icon = "Interface\\TargetingFrame\\UI-RaidTargetingIcons"
 	elseif E.db.KlixUI.raidmarkers.raidicons == "Anime" then
-		icon = "Interface\\Addons\\ElvUI_KlixUI_Classic\\media\\textures\\raidmarkers\\anime\\UI-RaidTargetingIcons"
+		icon = "Interface\\Addons\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\raidmarkers\\anime\\UI-RaidTargetingIcons"
 	elseif E.db.KlixUI.raidmarkers.raidicons == "Aurora" then
-		icon = "Interface\\Addons\\ElvUI_KlixUI_Classic\\media\\textures\\raidmarkers\\aurora\\UI-RaidTargetingIcons"
+		icon = "Interface\\Addons\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\raidmarkers\\aurora\\UI-RaidTargetingIcons"
 	elseif E.db.KlixUI.raidmarkers.raidicons == "Myth" then
-		icon = "Interface\\Addons\\ElvUI_KlixUI_Classic\\media\\textures\\raidmarkers\\myth\\UI-RaidTargetingIcon"
+		icon = "Interface\\Addons\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\raidmarkers\\myth\\UI-RaidTargetingIcon"
 	end
 end]]
 

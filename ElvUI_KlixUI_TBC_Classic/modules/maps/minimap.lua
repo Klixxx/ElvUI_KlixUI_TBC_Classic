@@ -283,7 +283,7 @@ function MM:SkinMiniMap()
         _G[frames[i]]:Kill()
     end
 	
-	Minimap:SetMaskTexture('Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\rectangle')
+	Minimap:SetMaskTexture('Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\rectangle')
 	Minimap:SetHitRectInsets(0, 0, (E.MinimapSize/8)*E.mult, (E.MinimapSize/8)*E.mult)
 	Minimap:SetClampRectInsets(0, 0, 0, 0)
 	

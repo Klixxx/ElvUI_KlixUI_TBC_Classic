@@ -140,7 +140,7 @@ function KC:Initialize()
 	self:LoadChatFade()
 
 	--Custom Emojis
-	local t = "|TInterface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\chatEmojis\\%s:16:16|t"
+	local t = "|TInterface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\chatEmojis\\%s:16:16|t"
 
 	-- Twitch Emojis
 	CH:AddSmiley(':monkaomega:', format(t, 'monkaomega'))

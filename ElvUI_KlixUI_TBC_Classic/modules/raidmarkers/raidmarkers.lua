@@ -51,11 +51,11 @@ function RMA:CreateButtons()
 		if RMA.db.raidicons == "Classic" then
 			image:SetTexture(k == 9 and "Interface\\BUTTONS\\UI-GroupLoot-Pass-Up" or T.string_format("Interface\\TargetingFrame\\UI-RaidTargetingIcon_%d", k))
 		elseif RMA.db.raidicons == "Anime" then
-			image:SetTexture(k == 9 and "Interface\\BUTTONS\\UI-GroupLoot-Pass-Up" or T.string_format("Interface\\Addons\\ElvUI_KlixUI_Classic\\media\\textures\\raidmarkers\\anime\\UI-RaidTargetingIcon_%d", k))
+			image:SetTexture(k == 9 and "Interface\\BUTTONS\\UI-GroupLoot-Pass-Up" or T.string_format("Interface\\Addons\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\raidmarkers\\anime\\UI-RaidTargetingIcon_%d", k))
 		elseif RMA.db.raidicons == "Aurora" then
-			image:SetTexture(k == 9 and "Interface\\BUTTONS\\UI-GroupLoot-Pass-Up" or T.string_format("Interface\\Addons\\ElvUI_KlixUI_Classic\\media\\textures\\raidmarkers\\aurora\\UI-RaidTargetingIcon_%d", k))
+			image:SetTexture(k == 9 and "Interface\\BUTTONS\\UI-GroupLoot-Pass-Up" or T.string_format("Interface\\Addons\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\raidmarkers\\aurora\\UI-RaidTargetingIcon_%d", k))
 		elseif RMA.db.raidicons == "Myth" then
-			image:SetTexture(k == 9 and "Interface\\BUTTONS\\UI-GroupLoot-Pass-Up" or T.string_format("Interface\\Addons\\ElvUI_KlixUI_Classic\\media\\textures\\raidmarkers\\myth\\UI-RaidTargetingIcon_%d", k))
+			image:SetTexture(k == 9 and "Interface\\BUTTONS\\UI-GroupLoot-Pass-Up" or T.string_format("Interface\\Addons\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\raidmarkers\\myth\\UI-RaidTargetingIcon_%d", k))
 		end
 
 		local target, worldmarker = layout.RT, layout.WM

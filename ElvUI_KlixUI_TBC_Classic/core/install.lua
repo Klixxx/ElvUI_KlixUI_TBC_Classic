@@ -655,7 +655,7 @@ function KUI:SetupLayout(layout)
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["castbar"]["sourceInterrupt"] = true
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["castbar"]["sourceInterruptClassColor"] = true
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["castbar"]["iconPosition"] = 'LEFT'
-	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["questIcon"]["enable"] = true
+	--E.db["nameplates"]["units"]["FRIENDLY_NPC"]["questIcon"]["enable"] = true
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["floatingCombatFeedback"] = false
 
 	-- Enemy NPC
@@ -2136,7 +2136,7 @@ end
 KUI.installTable = {
 	["Name"] = "|cfff960d9KlixUI|r",
 	["Title"] = L["|cfff960d9KlixUI|r Installation"],
-	["tutorialImage"] = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\KlixUI.tga",
+	["tutorialImage"] = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\KlixUI.tga",
 	["Pages"] = {
 		[1] = function()
 			PluginInstallTutorialImage:Size(248, 128)

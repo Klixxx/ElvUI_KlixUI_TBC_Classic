@@ -63,7 +63,7 @@ function KM:AddNewMail(new)
 	local time = T.GetTime()
 	if new > 0 and time > LastAlert then
 		if E.db.KlixUI.maps.minimap.mail.sound and not (E.db.KlixUI.notification.enable or not E.db.KlixUI.notification.mail or E.db.KlixUI.notification.noSound) then
-			T.PlaySoundFile('Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\sounds\\yoda_message.mp3')
+			T.PlaySoundFile('Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\sounds\\yoda_message.mp3')
 		end
 		
 		LastAlert = time + 15

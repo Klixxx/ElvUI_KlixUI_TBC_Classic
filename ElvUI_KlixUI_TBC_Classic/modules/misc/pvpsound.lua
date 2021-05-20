@@ -2,9 +2,9 @@
 if E.db.KlixUI.pvp == nil then E.db.KlixUI.pvp = {} end
 if not E.db.KlixUI.pvp.killStreaks then return end
 
-local soundpath = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\sounds\\Unreal_Tournament\\Killstreaks\\"
-local forthealliance = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\sounds\\heroism.mp3"
-local forthehorde = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\sounds\\bloodlust.mp3"
+local soundpath = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\sounds\\Unreal_Tournament\\Killstreaks\\"
+local forthealliance = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\sounds\\heroism.mp3"
+local forthehorde = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\sounds\\bloodlust.mp3"
 
 local firstblood = soundpath.."firstblood.ogg"
 local killingspree = soundpath.."killingspree.ogg"

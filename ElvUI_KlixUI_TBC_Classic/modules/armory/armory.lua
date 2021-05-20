@@ -352,7 +352,7 @@ function KA:BuildInformation()
 
 		frame.Gradiation.Texture = frame.Gradiation:CreateTexture(nil, "OVERLAY")
 		frame.Gradiation.Texture:SetInside()
-		frame.Gradiation.Texture:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\Gradation')
+		frame.Gradiation.Texture:SetTexture('Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\Gradation')
 
 		if id <= 7 or id == 17 or id == 11 then -- Left Side
 			frame.Gradiation:SetPoint("LEFT", _G["Character"..slotName], "RIGHT", -20, 0)

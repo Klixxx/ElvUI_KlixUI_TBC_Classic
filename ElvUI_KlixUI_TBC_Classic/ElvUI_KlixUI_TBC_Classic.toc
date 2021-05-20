@@ -2,7 +2,7 @@
 ## Author: Klix
 ## Version: 0.01
 ## Title: |cff1784d1ElvUI TBC|r |cfff960d9KlixUI|r
-## Notes: A decorative edit for |cfffe7b2cElvUI|r with many awesome features!
+## Notes: A decorative edit for |cff1784d1ElvUI|r with many awesome features!
 ## Notes-deDE: Eine dekorative Erweiterung für ElvUI mit einigen nützlichen Funktionen.
 ## RequiredDeps: ElvUI
 ## DefaultState: Enabled

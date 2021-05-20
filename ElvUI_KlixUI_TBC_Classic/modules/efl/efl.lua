@@ -2,7 +2,7 @@ local KUI, T, E, L, V, P, G = unpack(select(2, ...))
 local EFL = KUI:NewModule("EnhancedFriendsList", "AceHook-3.0")
 local LSM = E.LSM or E.Libs.LSM
 
-local MediaPath = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\"
+local MediaPath = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\"
 
 EFL.GameIcons = {
 	Default = {

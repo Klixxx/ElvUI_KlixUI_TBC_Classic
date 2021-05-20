@@ -12,7 +12,7 @@ local function styleMail()
 	
 	if E.db.KlixUI.maps.minimap.mail then
 		-- Change the Minimap Mail icon
-		MiniMapMailIcon:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\Mail")
+		MiniMapMailIcon:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\Mail")
 		MiniMapMailIcon:SetSize(22, 22)
 		MiniMapMailFrame:Raise()
 
@@ -24,7 +24,7 @@ local function styleMail()
 					MiniMapMailFrame.highlight:SetFrameLevel(MiniMapMailFrame:GetFrameLevel() + 1)
 
 					MiniMapMailFrame.highlight.tex = MiniMapMailFrame.highlight:CreateTexture("OVERLAY")
-					MiniMapMailFrame.highlight.tex:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\Mail")
+					MiniMapMailFrame.highlight.tex:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\Mail")
 					MiniMapMailFrame.highlight.tex:SetPoint("TOPLEFT", MiniMapMailIcon, "TOPLEFT", -2, 2)
 					MiniMapMailFrame.highlight.tex:SetPoint("BOTTOMRIGHT", MiniMapMailIcon, "BOTTOMRIGHT", 2, -2)
 					MiniMapMailFrame.highlight.tex:SetVertexColor(r, g, b)

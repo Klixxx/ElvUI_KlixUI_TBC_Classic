@@ -116,7 +116,7 @@ function KUIL:ShadowOverlay()
 	self.f:SetFrameStrata("BACKGROUND")
 
 	self.f.tex = self.f:CreateTexture()
-	self.f.tex:SetTexture([[Interface\Addons\ElvUI_KlixUI_Classic\media\textures\overlay]])
+	self.f.tex:SetTexture([[Interface\Addons\ElvUI_KlixUI_TBC_Classic\media\textures\overlay]])
 	self.f.tex:SetAllPoints(self.f)
 	
 	self:SetShadowLevel(E.db.KlixUI.general.shadowOverlay.alpha or 60)

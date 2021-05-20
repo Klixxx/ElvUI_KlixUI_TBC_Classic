@@ -12,7 +12,7 @@
 	<script file="movers.lua"/>
 	<script file="confirmSP.lua"/>
 	<script file="gmotd.lua"/>
-	<script file="afk.lua"/>
+	<!--script file="afk.lua"/-->
 	<script file="gamemenu.lua"/>
 	<script file="cursor.lua"/>
 	<script file="invite.lua"/>

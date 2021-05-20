@@ -9,7 +9,7 @@ local S = E:GetModule("Skins")
 
 local GameMenuFrame = _G.GameMenuFrame
 
-local logo = "Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\KlixUILogo.tga"
+local logo = "Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\KlixUILogo.tga"
 
 function KGM:GameMenu()
 	-- GameMenu Frame
@@ -75,7 +75,7 @@ function KGM:GameMenu()
 		topPanel.factionLogo = topPanel:CreateTexture(nil, "ARTWORK")
 		topPanel.factionLogo:SetPoint("CENTER", topPanel, "CENTER", 0, 0)
 		topPanel.factionLogo:SetSize(156, 150)
-		topPanel.factionLogo:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_Classic\\media\\textures\\classIcons\\CLASS-"..E.myclass)
+		topPanel.factionLogo:SetTexture("Interface\\AddOns\\ElvUI_KlixUI_TBC_Classic\\media\\textures\\classIcons\\CLASS-"..E.myclass)
 	end
 end
 
