@@ -1,6 +1,6 @@
 ## Interface: 20501
 ## Author: Klix
-## Version: 0.01
+## Version: 0.02
 ## Title: |cff1784d1ElvUI TBC|r |cfff960d9KlixUI|r
 ## Notes: A decorative edit for |cff1784d1ElvUI|r with many awesome features!
 ## Notes-deDE: Eine dekorative Erweiterung für ElvUI mit einigen nützlichen Funktionen.
