@@ -266,9 +266,9 @@ function KUI:SetupLayout(layout)
 	E.db["general"]["decimalLenght"] = 1
 	E.db["general"]["taintLog"] = false
 	E.db["general"]["vehicleSeatIndicatorSize"] = 76
-	E.db["general"]["threat"]["enable"] = true
-	E.db["general"]["threat"]["textSize"] = 10
-	E.db["general"]["threat"]["textOutline"] = "OUTLINE"
+	--E.db["general"]["threat"]["enable"] = true
+	--E.db["general"]["threat"]["textSize"] = 10
+	--E.db["general"]["threat"]["textOutline"] = "OUTLINE"
 	
 	if E.myclass == "SHAMAN" then
 		E.db["general"]["totems"]["enable"] = true

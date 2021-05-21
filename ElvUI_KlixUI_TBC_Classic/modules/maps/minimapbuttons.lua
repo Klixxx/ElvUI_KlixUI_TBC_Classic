@@ -59,7 +59,7 @@ function SMB:HandleBlizzardButtons()
 	if not SMB.db.enable then return end
 
 	if SMB.db.moveMail and not _G.MiniMapMailFrame.SMB then
-		local Frame = T.CreateFrame('Frame', 'SMB_MailFrame', self.Bar)
+		local Frame = T.CreateFrame('Frame', 'SMB_MailFrame', self.Bar, 'BackdropTemplate')
 		Frame:SetSize(SMB.db.iconSize, SMB.db.iconSize)
 		Frame:SetTemplate()
 		Frame.Icon = Frame:CreateTexture(nil, 'ARTWORK')
@@ -366,7 +366,11 @@ end
 function SMB:Initialize()
 	if not E.private.general.minimap.enable or not E.db.KlixUI.maps.minimap.buttons.enable then return end
 	if T.IsAddOnLoaded("ProjectAzilroka") then return end
-
+	
+	if not E.db.KlixUI.maps.minimap.buttons then
+		E.db.KlixUI.maps.minimap.buttons = {}
+	end
+	
 	SMB.db = E.db.KlixUI.maps.minimap.buttons
 
 	SMB.Hider = T.CreateFrame("Frame", nil, UIParent)

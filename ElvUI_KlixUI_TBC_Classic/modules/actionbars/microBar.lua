@@ -327,7 +327,7 @@ function MB:CreateMicroBar()
 		local euTime = T.date("%H|cFF999999:|r%M")
 		local ukTime = T.date("%I|cFF999999:|r%M")
 
-		if E.db.datatexts.time24 == true then
+		if E.global.datatexts.settings.Time.time24 then
 			timeButton.text:SetText(euTime)
 		else
 			timeButton.text:SetText(ukTime)
