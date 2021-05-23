@@ -266,10 +266,7 @@ function KUI:SetupLayout(layout)
 	E.db["general"]["decimalLenght"] = 1
 	E.db["general"]["taintLog"] = false
 	E.db["general"]["vehicleSeatIndicatorSize"] = 76
-	--E.db["general"]["threat"]["enable"] = true
-	--E.db["general"]["threat"]["textSize"] = 10
-	--E.db["general"]["threat"]["textOutline"] = "OUTLINE"
-	
+
 	if E.myclass == "SHAMAN" then
 		E.db["general"]["totems"]["enable"] = true
 	else
@@ -289,9 +286,6 @@ function KUI:SetupLayout(layout)
 	E.db["general"]["minimap"]["locationFontSize"] = 12
 	E.db["general"]["minimap"]["locationFontOutline"] = "OUTLINE"
 	E.db["general"]["minimap"]["locationFont"] = "Expressway"
-	E.db["general"]["itemLevel"]["displayCharacterInfo"] = true
-	E.db["general"]["itemLevel"]['itemLevelFont'] = "Expressway"
-	E.db["general"]["itemLevel"]['enchantFont'] = "Expressway"
 
 	KUI:SetMoverPosition("MinimapMover", "TOPRIGHT", E.UIParent, "TOPRIGHT", -10, -10)	
 	KUI:SetMoverPosition("TotemBarMover", "BOTTOMLEFT", E.UIParent, "BOTTOMLEFT", 480, 10)
