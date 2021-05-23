@@ -1104,7 +1104,55 @@ function KUI:SetupUnitframes(layout)
 	if not E.db["unitframe"]["units"]["targettarget"]["customTexts"] then E.db["unitframe"]["units"]["targettarget"]["customTexts"] = {} end
 	-- Delete old customTexts/ Create empty table
 	E.db["unitframe"]["units"]["targettarget"]["customTexts"] = {}
+	
+	-- TargetTargetTarget
+	E.db["unitframe"]["units"]["targettargettarget"]["enable"] = false
+	
+	-- Focus
+	E.db["unitframe"]["units"]["focus"]["enable"] = true
+	E.db["unitframe"]["units"]["focus"]["width"] = 250
+	E.db["unitframe"]["units"]["focus"]["height"] = 16
+	E.db["unitframe"]["units"]["focus"]["rangeCheck"] = false
+	E.db["unitframe"]["units"]["focus"]["threatStyle"] = "NONE"
+	E.db["unitframe"]["units"]["focus"]["buffs"]["enable"] = false
+	E.db["unitframe"]["units"]["focus"]["debuffs"]["enable"] = false
+	E.db["unitframe"]["units"]["focus"]["name"]["attachTextTo"] = "Frame"
+	E.db["unitframe"]["units"]["focus"]["name"]["position"] = "CENTER"
+	E.db["unitframe"]["units"]["focus"]["name"]["text_format"] = "[name:long]"
+	E.db["unitframe"]["units"]["focus"]["health"]["position"] = "LEFT"
+	E.db["unitframe"]["units"]["focus"]["health"]["text_format"] = ""
+	E.db["unitframe"]["units"]["focus"]["health"]["xOffset"] = 0
+	E.db["unitframe"]["units"]["focus"]["health"]["yOffset"] = 0
+	E.db["unitframe"]["units"]["focus"]["health"]["attachTextTo"] = "Frame"
+	E.db["unitframe"]["units"]["focus"]["power"]["enable"] = false
+	E.db["unitframe"]["units"]["focus"]["power"]["position"] = "CENTER"
+	E.db["unitframe"]["units"]["focus"]["power"]["height"] = 3
+	E.db["unitframe"]["units"]["focus"]["power"]["text_format"] = ""
+	E.db["unitframe"]["units"]["focus"]["power"]["xOffset"] = 0
+	E.db["unitframe"]["units"]["focus"]["power"]["yOffset"] = 0
+	E.db["unitframe"]["units"]["focus"]["castbar"]["enable"] = false
+	E.db["unitframe"]["units"]["focus"]["castbar"]["width"] = 250
+	E.db["unitframe"]["units"]["focus"]["castbar"]["height"] = 16
+	E.db["unitframe"]["units"]["focus"]["castbar"]["icon"] = false
+	E.db["unitframe"]["units"]["focus"]["castbar"]["iconSize"] = 16
+	E.db["unitframe"]["units"]["focus"]["castbar"]["latency"] = true
+	E.db["unitframe"]["units"]["focus"]["castbar"]["format"] = "REMAINING"
+	E.db["unitframe"]["units"]["focus"]["castbar"]["spark"] = false
+	E.db["unitframe"]["units"]["focus"]["castbar"]["insideInfoPanel"] = false
+	E.db["unitframe"]["units"]["focus"]["portrait"]["enable"] = false
+	E.db["unitframe"]["units"]["focus"]["infoPanel"]["enable"] = false
 
+	-- FocusTarget
+	E.db["unitframe"]["units"]["focustarget"]["enable"] = true
+	E.db["unitframe"]["units"]["focustarget"]["rangeCheck"] = false
+	E.db["unitframe"]["units"]["focustarget"]["width"] = 250
+	E.db["unitframe"]["units"]["focustarget"]["height"] = 16
+	E.db["unitframe"]["units"]["focustarget"]["power"]["enable"] = false
+	E.db["unitframe"]["units"]["focustarget"]["buffs"]["enable"] = false
+	E.db["unitframe"]["units"]["focustarget"]["debuffs"]["enable"] = false
+	E.db["unitframe"]["units"]["focustarget"]["name"]["position"] = "CENTER"
+	E.db["unitframe"]["units"]["focustarget"]["name"]["text_format"] = "[name:long]"
+	
 	-- Pet
 	E.db["unitframe"]["units"]["pet"]["width"] = 90
 	E.db["unitframe"]["units"]["pet"]["height"] = 33
@@ -1305,6 +1353,7 @@ function KUI:SetupUnitframes(layout)
 	E.db["unitframe"]["units"]["raid"]["roleIcon"]["xOffset"] = 2
 	E.db["unitframe"]["units"]["raid"]["roleIcon"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["raid"]["portrait"]["enable"] = false
+	E.db["unitframe"]["units"]["raid"]["infoPanel"]["enable"] = false
 	
 	if not E.db["unitframe"]["units"]["raid"]["customTexts"] then E.db["unitframe"]["units"]["raid"]["customTexts"] = {} end
 	-- Delete old customTexts/ Create empty table
