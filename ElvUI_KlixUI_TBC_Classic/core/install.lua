@@ -289,13 +289,6 @@ function KUI:SetupLayout(layout)
 	E.db["general"]["minimap"]["locationFontSize"] = 12
 	E.db["general"]["minimap"]["locationFontOutline"] = "OUTLINE"
 	E.db["general"]["minimap"]["locationFont"] = "Expressway"
-	E.db["general"]["altPowerBar"]["enable"] = true
-	E.db["general"]["altPowerBar"]["font"] = "Expressway"
-	E.db["general"]["altPowerBar"]["fontSize"] = 11
-	E.db["general"]["altPowerBar"]["fontOutline"] = "OUTLINE"
-	E.db["general"]["altPowerBar"]["statusBar"] = "Klix"
-	E.db["general"]["altPowerBar"]["textFormat"] = "NAMECURMAXPERC"
-	E.db["general"]["altPowerBar"]["statusBarColorGradient"] = true
 	E.db["general"]["itemLevel"]["displayCharacterInfo"] = true
 	E.db["general"]["itemLevel"]['itemLevelFont'] = "Expressway"
 	E.db["general"]["itemLevel"]['enchantFont'] = "Expressway"
