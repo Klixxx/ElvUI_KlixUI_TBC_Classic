@@ -353,8 +353,8 @@ function KUI:SetupLayout(layout)
 	E.db["auras"]["buffs"]["verticalSpacing"] = 16
 	E.db["auras"]["debuffs"]["verticalSpacing"] = 16
 	
-	KUI:SetMoverPosition("BuffsMover", "TOPRIGHT", E.UIParent, "TOPRIGHT", -164, -10)
-	KUI:SetMoverPosition("DebuffsMover", "TOPRIGHT", E.UIParent, "TOPRIGHT", -164, -128)
+	KUI:SetMoverPosition("BuffsMover", "TOPRIGHT", E.UIParent, "TOPRIGHT", -176, -10)
+	KUI:SetMoverPosition("DebuffsMover", "TOPRIGHT", E.UIParent, "TOPRIGHT", -176, -128)
 	
 	--[[----------------------------------
 	--	ProfileDB - Bags
