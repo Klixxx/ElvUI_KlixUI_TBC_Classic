@@ -1788,8 +1788,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["bar1"]["backdrop"] = false
 	E.db["actionbar"]["bar1"]["heightMult"] = 1
 	E.db["actionbar"]["bar1"]["widthMult"] = 1
-	E.db["actionbar"]["bar1"]["buttonsize"] = 30
-	E.db["actionbar"]["bar1"]["buttonspacing"] = 1
+	E.db["actionbar"]["bar1"]["buttonSize"] = 30
+	E.db["actionbar"]["bar1"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar1"]["backdropSpacing"] = 0
 	E.db["actionbar"]["bar1"]["alpha"] = 1
 	E.db["actionbar"]["bar1"]["inheritGlobalFade"] = false
@@ -1803,8 +1803,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["bar2"]["backdrop"] = false
 	E.db["actionbar"]["bar2"]["heightMult"] = 1
 	E.db["actionbar"]["bar2"]["widthMult"] = 1
-	E.db["actionbar"]["bar2"]["buttonsize"] = 30
-	E.db["actionbar"]["bar2"]["buttonspacing"] = 1
+	E.db["actionbar"]["bar2"]["buttonSize"] = 30
+	E.db["actionbar"]["bar2"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar2"]["backdropSpacing"] = 0
 	E.db["actionbar"]["bar2"]["alpha"] = 1
 	E.db["actionbar"]["bar2"]["inheritGlobalFade"] = false
@@ -1818,8 +1818,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["bar3"]["backdrop"] = false
 	E.db["actionbar"]["bar3"]["heightMult"] = 1
 	E.db["actionbar"]["bar3"]["widthMult"] = 1
-	E.db["actionbar"]["bar3"]["buttonsize"] = 30
-	E.db["actionbar"]["bar3"]["buttonspacing"] = 1
+	E.db["actionbar"]["bar3"]["buttonSize"] = 30
+	E.db["actionbar"]["bar3"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar3"]["backdropSpacing"] = 0
 	E.db["actionbar"]["bar3"]["alpha"] = 1
 	E.db["actionbar"]["bar3"]["inheritGlobalFade"] = false
@@ -1837,8 +1837,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["bar4"]["backdrop"] = false
 	E.db["actionbar"]["bar4"]["heightMult"] = 1
 	E.db["actionbar"]["bar4"]["widthMult"] = 1
-	E.db["actionbar"]["bar4"]["buttonsize"] = 30
-	E.db["actionbar"]["bar4"]["buttonspacing"] = 1
+	E.db["actionbar"]["bar4"]["buttonSize"] = 30
+	E.db["actionbar"]["bar4"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar4"]["backdropSpacing"] = 0
 	E.db["actionbar"]["bar4"]["alpha"] = 1
 	E.db["actionbar"]["bar4"]["inheritGlobalFade"] = false
@@ -1856,8 +1856,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["bar5"]["backdrop"] = false
 	E.db["actionbar"]["bar5"]["heightMult"] = 1
 	E.db["actionbar"]["bar5"]["widthMult"] = 1
-	E.db["actionbar"]["bar5"]["buttonsize"] = 30
-	E.db["actionbar"]["bar5"]["buttonspacing"] = 1
+	E.db["actionbar"]["bar5"]["buttonSize"] = 30
+	E.db["actionbar"]["bar5"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar5"]["backdropSpacing"] = 0
 	E.db["actionbar"]["bar5"]["alpha"] = 1
 	E.db["actionbar"]["bar5"]["inheritGlobalFade"] = false
@@ -1871,8 +1871,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["bar6"]["backdrop"] = false
 	E.db["actionbar"]["bar6"]["heightMult"] = 1
 	E.db["actionbar"]["bar6"]["widthMult"] = 1
-	E.db["actionbar"]["bar6"]["buttonsize"] = 30
-	E.db["actionbar"]["bar6"]["buttonspacing"] = 1
+	E.db["actionbar"]["bar6"]["buttonSize"] = 30
+	E.db["actionbar"]["bar6"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar6"]["backdropSpacing"] = 0
 	E.db["actionbar"]["bar6"]["alpha"] = 1
 	E.db["actionbar"]["bar6"]["inheritGlobalFade"] = false
@@ -1887,8 +1887,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["barPet"]["backdrop"] = false
 	E.db["actionbar"]["barPet"]["heightMult"] = 1
 	E.db["actionbar"]["barPet"]["widthMult"] = 1
-	E.db["actionbar"]["barPet"]["buttonsize"] = 20
-	E.db["actionbar"]["barPet"]["buttonspacing"] = 1
+	E.db["actionbar"]["barPet"]["buttonSize"] = 20
+	E.db["actionbar"]["barPet"]["buttonSpacing"] = 1
 	E.db["actionbar"]["barPet"]["backdropSpacing"] = 0
 	E.db["actionbar"]["barPet"]["alpha"] = 1
 	E.db["actionbar"]["barPet"]["inheritGlobalFade"] = false
@@ -1903,8 +1903,8 @@ function KUI:SetupActionbars(layout)
 	E.db["actionbar"]["stanceBar"]["backdrop"] = false
 	E.db["actionbar"]["stanceBar"]["heightMult"] = 1
 	E.db["actionbar"]["stanceBar"]["widthMult"] = 1
-	E.db["actionbar"]["stanceBar"]["buttonsize"] = 30
-	E.db["actionbar"]["stanceBar"]["buttonspacing"] = 1
+	E.db["actionbar"]["stanceBar"]["buttonSize"] = 30
+	E.db["actionbar"]["stanceBar"]["buttonSpacing"] = 1
 	E.db["actionbar"]["stanceBar"]["backdropSpacing"] = 0
 	E.db["actionbar"]["stanceBar"]["alpha"] = 1
 	E.db["actionbar"]["stanceBar"]["inheritGlobalFade"] = false
