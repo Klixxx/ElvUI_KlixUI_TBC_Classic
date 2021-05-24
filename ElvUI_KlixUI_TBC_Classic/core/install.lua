@@ -447,7 +447,7 @@ function KUI:SetupLayout(layout)
 	-- ExperienceBar
 	E.db["databars"]["experience"]["enable"] = true
 	E.db["databars"]["experience"]["mouseover"] = false
-	E.db["databars"]["experience"]["width"] = 371
+	E.db["databars"]["experience"]["width"] = 372
 	E.db["databars"]["experience"]["height"] = 10
 	E.db["databars"]["experience"]["font"] = "Expressway"
 	E.db["databars"]["experience"]["fontOutline"] = "OUTLINE"
@@ -461,7 +461,7 @@ function KUI:SetupLayout(layout)
 	-- ReputationBar 
 	E.db["databars"]["reputation"]["enable"] = true
 	E.db["databars"]["reputation"]["mouseover"] = false
-	E.db["databars"]["reputation"]["width"] = 371
+	E.db["databars"]["reputation"]["width"] = 372
 	E.db["databars"]["reputation"]["height"] = 10
 	E.db["databars"]["reputation"]["font"] = "Expressway"
 	E.db["databars"]["reputation"]["fontOutline"] = "OUTLINE"
@@ -471,10 +471,24 @@ function KUI:SetupLayout(layout)
 	E.db["databars"]["reputation"]["hideInVehicle"] = false
 	E.db["databars"]["reputation"]["hideInCombat"] = false
 	E.db["databars"]["reputation"]["reverseFill"] = false
+	-- ThreatBar 
+	E.db["databars"]["threat"]["enable"] = true
+	E.db["databars"]["threat"]["mouseover"] = false
+	E.db["databars"]["threat"]["width"] = 372
+	E.db["databars"]["threat"]["height"] = 10
+	E.db["databars"]["threat"]["font"] = "Expressway"
+	E.db["databars"]["threat"]["fontOutline"] = "OUTLINE"
+	E.db["databars"]["threat"]["textFormat"] = "NONE"
+	E.db["databars"]["threat"]["textSize"] = 12
+	E.db["databars"]["threat"]["orientation"] = "HORIZONTAL"
+	E.db["databars"]["threat"]["hideInVehicle"] = false
+	E.db["databars"]["threat"]["hideInCombat"] = false
+	E.db["databars"]["threat"]["reverseFill"] = false
 	
 	-- Bar Movers
 	KUI:SetMoverPosition("ExperienceBarMover", "BOTTOM", E.UIParent, "BOTTOM", 0, 58)
-	KUI:SetMoverPosition("ReputationBarMover", "BOTTOM", E.UIParent, "BOTTOM", 0, 71)
+	KUI:SetMoverPosition("ReputationBarMover", "BOTTOM", E.UIParent, "BOTTOM", 0, 70)
+	KUI:SetMoverPosition("ThreatBarMover", "BOTTOM", E.UIParent, "BOTTOM", 0, 82)
 	
 	--[[----------------------------------
 	--	ProfileDB - NamePlate
@@ -1927,7 +1941,7 @@ function KUI:SetupActionbars(layout)
 		KUI:SetMoverPosition("ElvAB_3", "BOTTOM", E.UIParent, "BOTTOM", 0, 186)
 		KUI:SetMoverPosition("ElvAB_4", "BOTTOMLEFT", E.UIParent, "BOTTOMLEFT", 411, 8)
 		KUI:SetMoverPosition("ElvAB_5", "BOTTOMRIGHT", E.UIParent, "BOTTOMRIGHT", -411, 8)
-		KUI:SetMoverPosition("ElvAB_6", "BOTTOM", E.UIParent, "BOTTOM", 0, 26)		
+		KUI:SetMoverPosition("ElvAB_6", "BOTTOM", E.UIParent, "BOTTOM", 0, 27)		
 		KUI:SetMoverPosition("PetAB", "BOTTOM", E.UIParent, "BOTTOM", 0, 165)
 		
 		--[[----------------------------------
@@ -2020,7 +2034,7 @@ function KUI:SetupDts(layout)
 	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["panelTransparency"] = true
 	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["enable"] = true
 	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["backdrop"] = true
-	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["width"] = 371
+	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["width"] = 372
 	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["height"] = 21
 	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["fonts"]["enable"] = false
 	E.global["datatexts"]["customPanels"]["KUI_MiddlePanel"]["fonts"]["font"] = "Expressway"
