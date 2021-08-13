@@ -78,8 +78,7 @@ local shortenNumber = function(number)
 end
 
 -- Displays CurrentHP --(2.04b)--
-_G["ElvUF"].Tags.Events['health:current-kui'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
-_G["ElvUF"].Tags.Methods['health:current-kui'] = function(unit)
+E:AddTag('health:current-kui','UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED',function(unit)
 	local status = T.UnitIsDead(unit) and L["RIP"] or T.UnitIsGhost(unit) and L["Ghost"] or not T.UnitIsConnected(unit) and L["Offline"]
 	
 	if (status) then
@@ -88,11 +87,10 @@ _G["ElvUF"].Tags.Methods['health:current-kui'] = function(unit)
 		local CurrentHealth = T.UnitHealth(unit)
 		return shortenNumber(CurrentHealth)
 	end
-end
+end)
 
 -- Displays Percent --(100%)--
-_G["ElvUF"].Tags.Events['health:percent-kui'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
-_G["ElvUF"].Tags.Methods['health:percent-kui'] = function(unit)
+E:AddTag('health:percent-kui','UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED',function(unit)
 	local status = T.UnitIsDead(unit) and L["RIP"] or T.UnitIsGhost(unit) and L["Ghost"] or not T.UnitIsConnected(unit) and L["Offline"]
 	
 	if (status) then
@@ -105,11 +103,10 @@ _G["ElvUF"].Tags.Methods['health:percent-kui'] = function(unit)
 			return T.string_format("%.1f%%", CurrentPercent)
 		end
 	end
-end
+end)
 
 -- Displays CurrentHP | Percent --(2.04b | 100)--
-_G["ElvUF"].Tags.Events['health:current-percent-kui'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
-_G["ElvUF"].Tags.Methods['health:current-percent-kui'] = function(unit)
+E:AddTag('health:current-percent-kui','UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED',function(unit)
 	local status = T.UnitIsDead(unit) and L["RIP"] or T.UnitIsGhost(unit) and L["Ghost"] or not T.UnitIsConnected(unit) and L["Offline"]
 	
 	if (status) then
@@ -123,11 +120,10 @@ _G["ElvUF"].Tags.Methods['health:current-percent-kui'] = function(unit)
 			return shortenNumber(CurrentHealth) .. " | " .. T.string_format("%.1f%%", CurrentPercent)
 		end
 	end
-end
+end)
 
 -- Displays CurrentHP | Percent --(2.04b | 100)--
-_G["ElvUF"].Tags.Events['health:current-percent1-kui'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
-_G["ElvUF"].Tags.Methods['health:current-percent1-kui'] = function(unit)
+E:AddTag('health:current-percent1-kui','UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED',function(unit)
 	local status = T.UnitIsDead(unit) and L["RIP"] or T.UnitIsGhost(unit) and L["Ghost"] or not T.UnitIsConnected(unit) and L["Offline"]
 	
 	if (status) then
@@ -141,11 +137,10 @@ _G["ElvUF"].Tags.Methods['health:current-percent1-kui'] = function(unit)
 			return T.string_format("%.1f%%", CurrentPercent) .. " | " .. shortenNumber(CurrentHealth)
 		end
 	end
-end
+end)
 
 -- Displays current deficit
-_G["ElvUF"].Tags.Events['health:deficit-kui'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
-_G["ElvUF"].Tags.Methods['health:deficit-kui'] = function(unit)
+E:AddTag('health:deficit-kui','UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED',function(unit)
 	local status = T.UnitIsDead(unit) and L["RIP"] or T.UnitIsGhost(unit) and L["Ghost"] or not T.UnitIsConnected(unit) and L["Offline"]
 
 	if (status) then
@@ -153,18 +148,16 @@ _G["ElvUF"].Tags.Methods['health:deficit-kui'] = function(unit)
 	else
 		return E:GetFormattedText('DEFICIT', T.UnitHealth(unit), T.UnitHealthMax(unit))
 	end
-end
+end)
 
 -- Displays current power and 0 when no power instead of hiding when at 0, Also formats it like HP tag
-_G["ElvUF"].Tags.Events['power:current-kui'] = 'UNIT_DISPLAYPOWER UNIT_POWER_UPDATE UNIT_POWER_FREQUENT'
-_G["ElvUF"].Tags.Methods['power:current-kui'] = function(unit)
+E:AddTag('power:current-kui','UNIT_DISPLAYPOWER UNIT_POWER_UPDATE UNIT_POWER_FREQUENT',function(unit)
 	local CurrentPower = T.UnitPower(unit)
 	return shortenNumber(CurrentPower)
-end
+end)
 
  -- Displays Power Percent without any decimals
-_G["ElvUF"].Tags.Events['power:percent-kui'] = 'UNIT_DISPLAYPOWER UNIT_POWER_UPDATE UNIT_POWER_FREQUENT'
-_G["ElvUF"].Tags.Methods['power:percent-kui'] = function(unit)
+E:AddTag('power:percent-kui','UNIT_DISPLAYPOWER UNIT_POWER_UPDATE UNIT_POWER_FREQUENT',function(unit)
 	local CurrentPercent = (T.UnitPower(unit)/T.UnitPowerMax(unit))*100
 	local min = T.UnitPower(unit, SPELL_POWER_MANA)
 	
@@ -177,4 +170,4 @@ _G["ElvUF"].Tags.Methods['power:percent-kui'] = function(unit)
 			return T.string_format("%.0f%%", CurrentPercent)
 		end
 	end
-end
+end)
